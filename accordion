@@ -1,0 +1,12 @@
+<script>
+$('.expandable-trigger').click(function(){
+	var $expandable = $(this).closest('.expandable');
+  if(!$expandable.is('.open')){
+    $('.expandable.open > .expandable-trigger').click();
+    $expandable.addClass('open');    
+  }
+  else{
+    $expandable.removeClass('open');
+  }
+});
+</script>
