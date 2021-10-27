@@ -1,12 +1,12 @@
 <script>
-$('.expandable-trigger').click(function(){
-	var $expandable = $(this).closest('.expandable');
-  if(!$expandable.is('.open')){
-    $('.expandable.open > .expandable-trigger').click();
-    $expandable.addClass('open');    
+$('.accordion-trigger').click(function(){
+	var $accordion = $(this).closest('.accordion');
+  if(!$accordion.is('.open')){
+    $('.accordion.open > .accordion-trigger').click();
+    $accordion.addClass('open');    
   }
   else{
-    $expandable.removeClass('open');
+    $accordion.removeClass('open');
   }
 });
 </script>
